@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .card {
@@ -173,11 +173,15 @@ button {
   font-weight: bolder;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 615px) {
+  body {
+    height: 100%;
+  }
   .card {
     display: flex;
     flex-direction: column;
     height: 800px;
+    padding: 10px 10px 10px 10px;
   }
 
   .card-left {
